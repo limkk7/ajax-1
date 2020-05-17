@@ -44,22 +44,22 @@ var server = http.createServer(function (request, response) {
   } else if (path === '/2.js') {
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/javascript;charset=utf-8')
-    response.write(fs.readFileSync('public/2.js'))
+    response.write(fs.readFileSync('public/javascript.js'))
     response.end()
   } else if (path === '/3.html') {
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/html;charset=utf-8')
-    response.write(fs.readFileSync('public/3.html'))
+    response.write(fs.readFileSync('public/html.html'))
     response.end()
   } else if (path === '/4.xml') {
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/xml;charset=utf-8')
-    response.write(fs.readFileSync('public/4.xml'))
+    response.write(fs.readFileSync('public/xml.xml'))
     response.end()
   } else if (path === '/5.json') {
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/json;charset=utf-8')
-    response.write(fs.readFileSync('public/5.json'))
+    response.write(fs.readFileSync('public/json.json'))
     response.end()
   } else if (path === '/page2') {
     response.statusCode = 200
