@@ -43,7 +43,7 @@ getXML.onclick = () => {
 };
 getHTML.onclick = () => {
   const request = new XMLHttpRequest();
-  request.open("GET", "/3.htm");
+  request.open("GET", "/html.html");
   request.onload = () => {
     // 创建 div 标签
     const div = document.createElement("div");
@@ -57,7 +57,7 @@ getHTML.onclick = () => {
 };
 getJS.onclick = () => {
   const request = new XMLHttpRequest();
-  request.open("GET", "/2.js");
+  request.open("GET", "/javascript.js");
   request.onload = () => {
     // 创建 script 标签
     const script = document.createElement("script");
